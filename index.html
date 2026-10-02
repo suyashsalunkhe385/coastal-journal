@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="Rf5GBulUUMpVtafRRRvHOCMaINSERT_YOUR_FULL_CODE_HERE" />
+    <!-- Google Search Console Verification Meta Tag -->
+    <meta name="google-site-verification" content="PASTE_YOUR_EXACT_VERIFICATION_CODE_HERE" />
 
     <title>The Coastal Journal</title>
 
@@ -15,17 +15,15 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="header">
     <div class="container nav">
-
         <a href="index.html" class="logo">
             The Coastal <span>Journal</span>
         </a>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
 
         <nav id="navMenu">
             <a href="#home">Home</a>
@@ -33,350 +31,213 @@
             <a href="#categories">Categories</a>
             <a href="#about">About</a>
         </nav>
-
     </div>
 </header>
 
-
 <main>
 
-<!-- HERO -->
-<section class="hero" id="home">
-
-    <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=85" alt="Ocean">
-    </div>
-
-    <div class="hero-content">
-
-        <p class="eyebrow">TRAVEL • OCEAN • LIFE</p>
-
-        <h1>Stories from the edge of the sea.</h1>
-
-        <p class="hero-text">
-            A quiet collection of stories about coastal journeys,
-            peaceful places, photography and the simple beauty of life
-            near the ocean.
-        </p>
-
-        <a href="#stories" class="button">Explore Stories →</a>
-
-    </div>
-
-</section>
-
-
-<!-- FEATURED -->
-<section class="section">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">FEATURED STORY</p>
-                <h2>Where the morning meets the sea</h2>
-            </div>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=85" alt="Calm ocean beach during sunrise">
         </div>
 
-        <article class="featured-card">
-
-            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85" alt="Beach morning">
-
-            <div class="featured-content">
-
-                <span class="tag">Travel</span>
-
-                <h3>A Morning Walk Along a Silent Coast</h3>
-
-                <p>
-                    Before the crowds arrive, the coastline becomes a
-                    completely different world. Discover why early mornings
-                    by the sea feel almost magical.
-                </p>
-
-                <div class="post-meta">
-                    <span>October 1, 2026</span>
-                    <span>•</span>
-                    <span>6 min read</span>
-                </div>
-
-                <a href="post.html" class="read-link">
-                    Read story →
-                </a>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- STORIES -->
-<section class="section light" id="stories">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">LATEST STORIES</p>
-                <h2>Notes from the coast</h2>
-            </div>
-
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search stories...">
-            </div>
+        <div class="hero-content">
+            <p class="eyebrow">TRAVEL • OCEAN • LIFE</p>
+            <h1>Stories from the edge of the sea.</h1>
+            <p class="hero-text">
+                A quiet collection of stories about coastal journeys, peaceful places, photography, and the simple beauty of life near the ocean.
+            </p>
+            <a href="#stories" class="button">Explore Stories →</a>
         </div>
+    </section>
 
-
-        <div class="posts-grid" id="postsGrid">
-
-            <article class="post-card">
-
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Sunset">
-
-                <div class="post-body">
-
-                    <span class="tag">Photography</span>
-
-                    <h3>Golden Hour on an Empty Beach</h3>
-
-                    <p>
-                        The best light doesn't always need a perfect plan.
-                        Sometimes you simply need to wait.
-                    </p>
-
-                    <div class="post-meta">
-                        <span>Sep 28, 2026</span>
-                        <span>5 min read</span>
-                    </div>
-
+    <!-- FEATURED STORY -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FEATURED STORY</p>
+                    <h2>Where the morning meets the sea</h2>
                 </div>
+            </div>
 
-            </article>
-
-
-            <article class="post-card">
-
-                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Nature">
-
-                <div class="post-body">
-
-                    <span class="tag">Nature</span>
-
-                    <h3>The Quiet Places We Often Miss</h3>
-
-                    <p>
-                        A reminder to slow down and notice the small details
-                        hidden in familiar places.
-                    </p>
-
-                    <div class="post-meta">
-                        <span>Sep 24, 2026</span>
-                        <span>4 min read</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="post-card">
-
-                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Travel">
-
-                <div class="post-body">
-
+            <article class="featured-card">
+                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85" alt="Beach morning with golden reflections">
+                <div class="featured-content">
                     <span class="tag">Travel</span>
-
-                    <h3>A Small Backpack for a Weekend Away</h3>
-
+                    <h3>A Morning Walk Along a Silent Coast</h3>
                     <p>
-                        What really belongs in your bag when the destination
-                        is more important than the itinerary.
+                        Before the crowds arrive, the coastline becomes a completely different world. Discover why early mornings by the sea feel almost magical.
                     </p>
-
                     <div class="post-meta">
-                        <span>Sep 20, 2026</span>
-                        <span>7 min read</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="post-card">
-
-                <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=800&q=80" alt="Mountain">
-
-                <div class="post-body">
-
-                    <span class="tag">Adventure</span>
-
-                    <h3>When the Road Becomes the Destination</h3>
-
-                    <p>
-                        Sometimes the most memorable part of a journey is
-                        everything between two destinations.
-                    </p>
-
-                    <div class="post-meta">
-                        <span>Sep 16, 2026</span>
+                        <span>October 1, 2026</span>
+                        <span>•</span>
                         <span>6 min read</span>
                     </div>
-
+                    <a href="#stories" class="read-link">Read story →</a>
                 </div>
-
             </article>
-
-
-            <article class="post-card">
-
-                <img src="https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?auto=format&fit=crop&w=800&q=80" alt="Island">
-
-                <div class="post-body">
-
-                    <span class="tag">Places</span>
-
-                    <h3>Three Days on a Small Island</h3>
-
-                    <p>
-                        No crowded schedules, no rushing — just three slow
-                        days surrounded by water.
-                    </p>
-
-                    <div class="post-meta">
-                        <span>Sep 12, 2026</span>
-                        <span>8 min read</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="post-card">
-
-                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80" alt="Sunrise">
-
-                <div class="post-body">
-
-                    <span class="tag">Life</span>
-
-                    <h3>The Beauty of Starting Slowly</h3>
-
-                    <p>
-                        Why a quiet sunrise and a cup of coffee can sometimes
-                        be enough for a perfect morning.
-                    </p>
-
-                    <div class="post-meta">
-                        <span>Sep 08, 2026</span>
-                        <span>4 min read</span>
-                    </div>
-
-                </div>
-
-            </article>
-
         </div>
+    </section>
 
-        <p id="noResults" class="no-results">
-            No stories found.
-        </p>
+    <!-- STORIES GRID -->
+    <section class="section light" id="stories">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">LATEST STORIES</p>
+                    <h2>Notes from the coast</h2>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search stories...">
+                </div>
+            </div>
 
-    </div>
+            <div class="posts-grid" id="postsGrid">
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Sunset beach">
+                    <div class="post-body">
+                        <span class="tag">Photography</span>
+                        <h3>Golden Hour on an Empty Beach</h3>
+                        <p>The best light doesn't always need a perfect plan. Sometimes you simply need to wait.</p>
+                        <div class="post-meta">
+                            <span>Sep 28, 2026</span>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+                </article>
 
-</section>
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Lush nature path">
+                    <div class="post-body">
+                        <span class="tag">Nature</span>
+                        <h3>The Quiet Places We Often Miss</h3>
+                        <p>A reminder to slow down and notice the small details hidden in familiar places.</p>
+                        <div class="post-meta">
+                            <span>Sep 24, 2026</span>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Backpacking adventure">
+                    <div class="post-body">
+                        <span class="tag">Travel</span>
+                        <h3>A Small Backpack for a Weekend Away</h3>
+                        <p>What really belongs in your bag when the destination is more important than the itinerary.</p>
+                        <div class="post-meta">
+                            <span>Sep 20, 2026</span>
+                            <span>7 min read</span>
+                        </div>
+                    </div>
+                </article>
 
-<!-- CATEGORIES -->
-<section class="section" id="categories">
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=800&q=80" alt="Winding mountain coastal road">
+                    <div class="post-body">
+                        <span class="tag">Adventure</span>
+                        <h3>When the Road Becomes the Destination</h3>
+                        <p>Sometimes the most memorable part of a journey is everything between two destinations.</p>
+                        <div class="post-meta">
+                            <span>Sep 16, 2026</span>
+                            <span>6 min read</span>
+                        </div>
+                    </div>
+                </article>
 
-    <div class="container">
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?auto=format&fit=crop&w=800&q=80" alt="Tropical island coastline">
+                    <div class="post-body">
+                        <span class="tag">Places</span>
+                        <h3>Three Days on a Small Island</h3>
+                        <p>No crowded schedules, no rushing — just three slow days surrounded by water.</p>
+                        <div class="post-meta">
+                            <span>Sep 12, 2026</span>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                </article>
 
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">EXPLORE</p>
-                <h2>Browse by category</h2>
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80" alt="Sunrise across open scenery">
+                    <div class="post-body">
+                        <span class="tag">Life</span>
+                        <h3>The Beauty of Starting Slowly</h3>
+                        <p>Why a quiet sunrise and a cup of coffee can sometimes be enough for a perfect morning.</p>
+                        <div class="post-meta">
+                            <span>Sep 08, 2026</span>
+                            <span>4 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p id="noResults" class="no-results" style="display: none;">No stories found.</p>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">EXPLORE</p>
+                    <h2>Browse by category</h2>
+                </div>
+            </div>
+
+            <div class="categories">
+                <a href="#stories" class="category">
+                    <span>🌊</span>
+                    <strong>Ocean</strong>
+                    <small>12 stories</small>
+                </a>
+                <a href="#stories" class="category">
+                    <span>📷</span>
+                    <strong>Photography</strong>
+                    <small>9 stories</small>
+                </a>
+                <a href="#stories" class="category">
+                    <span>✈️</span>
+                    <strong>Travel</strong>
+                    <small>18 stories</small>
+                </a>
+                <a href="#stories" class="category">
+                    <span>🌿</span>
+                    <strong>Nature</strong>
+                    <small>14 stories</small>
+                </a>
             </div>
         </div>
+    </section>
 
-        <div class="categories">
-
-            <a href="#" class="category">
-                <span>🌊</span>
-                <strong>Ocean</strong>
-                <small>12 stories</small>
-            </a>
-
-            <a href="#" class="category">
-                <span>📷</span>
-                <strong>Photography</strong>
-                <small>9 stories</small>
-            </a>
-
-            <a href="#" class="category">
-                <span>✈️</span>
-                <strong>Travel</strong>
-                <small>18 stories</small>
-            </a>
-
-            <a href="#" class="category">
-                <span>🌿</span>
-                <strong>Nature</strong>
-                <small>14 stories</small>
-            </a>
-
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container about">
+            <div>
+                <p class="eyebrow">ABOUT THE JOURNAL</p>
+                <h2>A slower way to see the world.</h2>
+            </div>
+            <div>
+                <p>
+                    The Coastal Journal is an independent space for stories about travel, nature, photography, and the quiet moments that usually pass unnoticed.
+                </p>
+                <p>
+                    Take your time. Read a story. Find somewhere new.
+                </p>
+            </div>
         </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section class="about-section" id="about">
-
-    <div class="container about">
-
-        <div>
-            <p class="eyebrow">ABOUT THE JOURNAL</p>
-            <h2>A slower way to see the world.</h2>
-        </div>
-
-        <div>
-            <p>
-                The Coastal Journal is an independent space for stories
-                about travel, nature, photography and the quiet moments
-                that usually pass unnoticed.
-            </p>
-
-            <p>
-                Take your time. Read a story. Find somewhere new.
-            </p>
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 </main>
 
-
-<!-- FOOTER -->
 <footer>
-
     <div class="container footer">
-
         <div>
             <div class="footer-logo">The Coastal Journal</div>
-
-            <p>
-                Stories, places and moments worth remembering.
-            </p>
+            <p>Stories, places and moments worth remembering.</p>
         </div>
 
         <div class="footer-links">
@@ -385,17 +246,13 @@
             <a href="#categories">Categories</a>
             <a href="#about">About</a>
         </div>
-
     </div>
 
     <div class="copyright">
         © 2026 The Coastal Journal. All rights reserved.
     </div>
-
 </footer>
 
-
 <script src="script.js"></script>
-
 </body>
 </html>
